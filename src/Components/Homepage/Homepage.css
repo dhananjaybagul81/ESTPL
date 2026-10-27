@@ -1,0 +1,19 @@
+@keyframes reveal-slashes {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .slash-animation {
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: reveal-slashes 2s linear forwards;
+  }
+
+  
+  
+  

@@ -1,0 +1,32 @@
+/* Add to your CSS file */
+.slash-decoration {
+    font-family: monospace;
+    letter-spacing: -2px;
+    line-height: 1;
+    height: 20px;
+    opacity: 0.3;
+}
+
+.service-section {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.service-section:hover h1 {
+    color: rgb(239, 68, 68); /* This is Tailwind's red-500 */
+}
+
+/* Optional: Add animation for slash decorations */
+@keyframes slashReveal {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slash-decoration {
+    animation: slashReveal 1s ease-out forwards;
+}
+

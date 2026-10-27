@@ -1,0 +1,30 @@
+/* AnimatedLink.css */
+
+.animated-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .animated-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, red, transparent);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+  }
+  
+  .animated-link:hover::before {
+    transform: translateX(100%);
+  }
+  
+  .animated-letter {
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
